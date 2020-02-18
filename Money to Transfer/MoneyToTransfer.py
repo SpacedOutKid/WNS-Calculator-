@@ -78,25 +78,3 @@ saveInvestSign.grid(row=4,column=1,padx=0,pady=12,sticky=W)
 
 
 master.mainloop()
-
-'''
-
-totalAmtTransferred=0
-done='no'
-check=eval(input(('Enter the total amount being transfered: $')))
-while done!='yes':
-    account=input('Enter the account you are transfering to if finished entered done: ').lower()
-    if account==('wants'):
-        totalAmtTransferred+=check*wants #adds the amount transfered to tell me the total
-        print(f'Transfer ${check*wants:,.2f} for your wants \n')
-    if account==('needs'):
-        totalAmtTransferred+=check*needs
-        print(f'Transfer ${check*needs:,.2f} for your needs\n')
-    if account==('save'):
-        totalAmtTransferred+=check*saveandInvest
-        print(f'Trasnfer ${check*saveandInvest:,.2f} to save or invest \n')
-    if account==('done'):
-        print(f'Your total amount transferd is ${totalAmtTransferred:,.2f} you have ${check-totalAmtTransferred:,.2f} left to transfer')
-        done='yes'
-        '''
-    
